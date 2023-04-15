@@ -12,12 +12,6 @@ import java.util.Map;
 @RestController
 @RequestMapping("/employee")
 public class EmployeeController {
-
-    @GetMapping
-    public String sayHello(){
-        return "Hello";
-    }
-
     private final EmployeeService employeeService;
     public EmployeeController(EmployeeService service){
         this.employeeService = service;
