@@ -29,7 +29,6 @@ public class EmployeeServiceImpl implements EmployeeService {
         System.out.println("The employee has been deleted successfully.");
 
         return e;
-
     }
 
     public Employee findEmployee(String passportNumber) {
@@ -43,5 +42,4 @@ public class EmployeeServiceImpl implements EmployeeService {
     public Map<String, Employee> showAllEmployees() {
         return Collections.unmodifiableMap(employeeBook);
     }
-
 }
